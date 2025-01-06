@@ -37,7 +37,7 @@
 		<dependency>
 			<groupId>io.grpc</groupId>
 			<artifactId>grpc-okhttp</artifactId>
-			<version>1.58.1</version>
+			<version>1.68.2</version>
 		</dependency>
 			<!--
 		https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util -->
@@ -45,6 +45,12 @@
 			<groupId>com.google.protobuf</groupId>
 			<artifactId>protobuf-java-util</artifactId>
 			<version>3.25.5</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.google.code.gson</groupId>
+					<artifactId>gson</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 

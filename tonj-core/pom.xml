@@ -11,46 +11,49 @@
 
 
 	<dependencies>
+	
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.11.0</version>
+</dependency>
+
 		<!--
 		https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
 		<dependency>
 			<groupId>com.google.protobuf</groupId>
 			<artifactId>protobuf-java</artifactId>
-			<version>3.25.5</version>
+			<version>4.29.2</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.grpc/grpc-protobuf -->
 		<dependency>
 			<groupId>io.grpc</groupId>
 			<artifactId>grpc-protobuf</artifactId>
-			<version>1.58.1</version>
+			<version>1.69.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.grpc/grpc-stub -->
 		<dependency>
 			<groupId>io.grpc</groupId>
 			<artifactId>grpc-stub</artifactId>
-			<version>1.58.1</version>
+			<version>1.69.0</version>
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/io.grpc/grpc-okhttp -->
 		<dependency>
 			<groupId>io.grpc</groupId>
 			<artifactId>grpc-okhttp</artifactId>
-			<version>1.68.2</version>
+			<version>1.69.0</version>
 		</dependency>
 			<!--
 		https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util -->
 		<dependency>
 			<groupId>com.google.protobuf</groupId>
 			<artifactId>protobuf-java-util</artifactId>
-			<version>3.25.5</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.google.code.gson</groupId>
-					<artifactId>gson</artifactId>
-				</exclusion>
-			</exclusions>
+			<version>4.29.2</version>
+		
 		</dependency>
 
 

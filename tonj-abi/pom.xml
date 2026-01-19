@@ -15,7 +15,23 @@
 			<artifactId>tonj-utils</artifactId>
 			<version>1.0.1</version>
 		</dependency>
+		
+		
 	</dependencies>
+	
+	
+	<repositories>
+  <repository>
+    <id>2620009-release-nIG463</id>
+    <url>https://packages.aliyun.com/691c1035dec569489f6edb0e/maven/2620009-release-nig463</url>
+    <releases>
+      <enabled>true</enabled>
+    </releases>
+    <snapshots>
+      <enabled>true</enabled>
+    </snapshots>
+  </repository>
+</repositories>
 	
 	<build>
 		<plugins>
@@ -24,9 +40,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.13.0</version>
 				<configuration>
-					<source>${osnest.java.version}</source>
-					<target>${osnest.java.version}</target>
-					<encoding>${osnest.project.encoding}</encoding>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${project.encoding}</encoding>
 				</configuration>
 			</plugin>
 			<plugin>

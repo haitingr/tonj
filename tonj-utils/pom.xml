@@ -11,8 +11,15 @@
 
 
 	<dependencies>
+	
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk18on</artifactId>
+			<version>1.78.1</version>
+			<scope>provided</scope>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.vertx/vertx-core -->
-			<dependency>
+		<dependency>
 			<groupId>io.vertx</groupId>
 			<artifactId>vertx-core</artifactId>
 			<version>3.9.16</version>
@@ -49,7 +56,12 @@
 					<groupId>io.netty</groupId>
 					<artifactId>netty-handler-proxy</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-databind</artifactId>
+				</exclusion>
 			</exclusions>
+			<scope>provided</scope>
 		</dependency>
 		
 
@@ -58,6 +70,7 @@
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>29.0-jre</version>
+			<scope>provided</scope>
 		</dependency>
 
 
@@ -70,9 +83,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.13.0</version>
 				<configuration>
-					<source>${osnest.java.version}</source>
-					<target>${osnest.java.version}</target>
-					<encoding>${osnest.project.encoding}</encoding>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${project.encoding}</encoding>
 				</configuration>
 			</plugin>
 			<plugin>

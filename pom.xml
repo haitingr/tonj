@@ -10,42 +10,19 @@
 	<version>1.0.1</version>
 
 	<properties>
-		<osnest.project.encoding>UTF-8</osnest.project.encoding>
-		<osnest.java.version>21</osnest.java.version>
+		<project.encoding>UTF-8</project.encoding>
+		<java.version>21</java.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bcprov-jdk18on</artifactId>
-			<version>1.78.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.squareup.okhttp3</groupId>
-			<artifactId>okhttp</artifactId>
-			<version>4.12.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.24.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-slf4j-impl</artifactId>
-			<version>2.24.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.lmax</groupId>
-			<artifactId>disruptor</artifactId>
-			<version>3.4.3</version>
-		</dependency>
+		
+		
 	</dependencies>
 
 	<modules>
 
-	<module>tonj-utils</module>
-	<module>tonj-abi</module>
-	<module>tonj-core</module>
+		<module>tonj-utils</module>
+		<module>tonj-abi</module>
+		<module>tonj-core</module>
 	</modules>
 </project>
